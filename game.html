@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kids Learning</title>
+  <script src="js/game112.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/game112.css">
+
+</head> 
+<!-- <body style="background-image: url('assets/common/bg.png')"> -->
+  <body>
+  <img src="assets/common/bg.png" class="background-image1">
+   <div class="background-image">
+  <div class="level-completed1" id="level-completed1">
+    <video width="100%" height="100%" autoplay muted>
+      <source src="assets/common/star 3.mp4" type="video/mp4">
+    </video>
+    <audio id="levelcompleted-audio">
+      <source src="assets/options/audio/levelwin.mp3" type="audio/mpeg">
+    </audio>
+    <a href="GAME112-q2.html" id="next_button"></a>
+    <a href="GAME112-q1.html" id="back_button"></a>
+  </div>  
+  <div class="level-completed2" id="level-completed2">
+    <video width="100%" height="100%"  autoplay muted>
+      <source src="assets/common/star 2.mp4" type="video/mp4">
+    </video>
+    <audio id="levelcompleted-audio">
+      <source src="assets/options/audio/levelwin.mp3" type="audio/mpeg">
+    </audio>
+    <a href="GAME112-q2.html" id="next_button"></a>
+    <a href="GAME112-q1.html" id="back_button"></a>
+  </div>  
+  <div class="level-completed3" id="level-completed3">
+    <video width="100%" height="100%"  autoplay muted>
+      <source src="assets/common/star 1.mp4" type="video/mp4">
+    </video>
+    <audio id="levelcompleted-audio">
+      <source src="assets/options/audio/levelwin.mp3" type="audio/mpeg">
+    </audio>
+    <a href="GAME112-q2.html" id="next_button"></a>
+    <a href="GAME112-q1.html" id="back_button"></a>
+  </div>
+  </div>
+  <div class="playbackground">
+    <audio id="background-audio" loop volume=0.1>
+      <source src="assets/common/background.mpeg" type="audio/mpeg">
+    </audio>
+    </div>   
+  
+    <div class="popper" id="popper">
+      <img src="assets/common/final video.gif">
+     </div>
+    <h2 class="h2">ಕೆಳಗಿನ ಹೆಸರಿಗೆ ಸರಿಹೊಂದುವ ಚಿತ್ರವನ್ನು ಗುರುತಿಸಿ</h2>
+
+      
+
+  <div class="wrapper-grid">
+    <div class="sidebar">
+      <div class="audio-button">
+        <audio id="instruction-audio">
+          <source src="assets/options/audio/intro-112-grandma.mp3" type="audio/mpeg">
+        </audio>
+        <img src="assets/common/play.gif" id="audio-button" alt="play" class="profile-image11" onclick="playInstruction()">
+      </div> 
+    
+
+      
+        <img src="assets/common/girl standing.gif" class="gif" alt="default GIF" id="standing" style="display: block;">
+        <img src="assets/common/girl clapping (3).gif" class="gif" alt="Correct Answer GIF" id="claps" style="display: none;">
+        <img src="assets/common/girl sad (1).gif" class="gif" alt="Wrong Answer GIF" id="sad" style="display: none;">
+        <img src="assets/common/girl talking.gif" class="gif" alt="Instruction GIF" id="instruction" style="display: none;">
+      
+           </div>
+   
+    <div class="header"></div>
+    
+    <div class="option1 list " id="option1">
+      <audio id="audio1-audio">
+        <source src="assets/options/audio/Grandma1-112.mp3" type="audio/mp3">
+      </audio>
+          <img  src="assets/options/images/grand ma.png" alt="kidschool" class="profile-image" onclick="rightanswerClicked1('option1')">
+      </div>
+
+
+      <div class="option2 list"  id="option2">
+        <audio id="audio2-audio">
+          <source src="assets/options/audio/Young Brother-112.mp3" type="audio/mp3">
+        </audio>
+        <img  src="assets/options/images/brother.png" alt="yellowcar" class="profile-image" onclick="wronganswerClicked2('option2')">
+    </div>
+
+    <div class="question1">
+      <audio id="question1-audio">
+          <source src="assets/options/audio/Grandma1-112.mp3"type="audio/mpeg"></audio>
+        <img src="assets/options/images/grand ma opt.png" id="audio-button1" alt="redcolour" class="question1-button" onclick="playquestion1()">
+      </div> 
+
+    <div class="solution">
+      <div class="garbage" id="garbage"></div>
+      <audio id="wronganswer-audio">
+        <source src="assets/options/audio/wrong-beep.mp3" type="audio/mpeg">
+      </audio>
+      <audio id="correctanswer-audio">
+        <source src="assets/options/audio/right-claps.mp3" type="audio/mpeg">
+      </audio>
+      <audio id="correctanswer-claps-audio">
+        <source src="assets/options/audio/levelwin.mp3" type="audio/mp3">
+      </audio>
+    </div>
+</body>
+</html>
